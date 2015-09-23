@@ -1,0 +1,6 @@
+<distance_in_mm>
+	<minDistance>240</minDistance>
+	<maxDistance>1440</maxDistance>
+<distance_in_mm/>
+<step>5</step>
+</distance_in_mm>
