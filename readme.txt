@@ -18,3 +18,7 @@ kinectTest6
 
 kinectTest7
 >> use bullet and make ofxBulletTriMeshShape with kinectMesh
+
+kinectTest8
+>> set camera position and direction properly for kinect’s view and now you can change camera position and direction with GUI. added enable/disable DrawGuideLine and enable/disable MouseInput feature. And you can toggle fullscreen by pressing f keyboard and add sphere by pressing space key.
+

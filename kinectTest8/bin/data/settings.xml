@@ -1,0 +1,12 @@
+<distance_in_mm>
+	<minDistance>500</minDistance>
+	<maxDistance>1260</maxDistance>
+	<step>5</step>
+	<enableDrawDebug>1</enableDrawDebug>
+	<enableDrawWireFrame>1</enableDrawWireFrame>
+<distance_in_mm/>
+<cameraPosition>0, 0, -10</cameraPosition>
+<cameraLookAt>0, 0, 0</cameraLookAt>
+<enableDrawGuideLine>0</enableDrawGuideLine>
+	<enableMouseInput>1</enableMouseInput>
+</distance_in_mm>
