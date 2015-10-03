@@ -20,5 +20,5 @@ kinectTest7
 >> use bullet and make ofxBulletTriMeshShape with kinectMesh
 
 kinectTest8
->> set camera position and direction properly for kinect’s view and now you can change camera position and direction with GUI. added enable/disable DrawGuideLine and enable/disable MouseInput feature. And you can toggle fullscreen by pressing f keyboard and add sphere by pressing space key.
+>> set camera position and direction properly for kinect’s view and you can change camera position and camera target(you can see the target as yellow sphere) with cameraPosition slider and cameraLookAt sliders after disabling mouseInput for ofEasyCam by pressing enableMouseInput button. you can see simple guide line by pressing DrawGuideLine button, and you can reset all of GUI settings and reset ofEasyCam by pressing reset button. You can toggle fullscreen by pressing f key and add sphere by pressing space key. you can see debug spheres by pressing enableDrawDebugSpheres button to check whole kinect view.
 

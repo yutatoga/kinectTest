@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29971E51BC077EC00141163 /* ofxKinectV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971A11BC077EC00141163 /* ofxKinectV2.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971E61BC077EC00141163 /* usb-1.0.0-superspeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29971BB1BC077EC00141163 /* usb-1.0.0-superspeed.a */; };
+		B29971E71BC077EC00141163 /* ofProtonect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971CC1BC077EC00141163 /* ofProtonect.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971E81BC077EC00141163 /* ofRGBPacketProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971CE1BC077EC00141163 /* ofRGBPacketProcessor.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971E91BC077EC00141163 /* cpu_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D11BC077EC00141163 /* cpu_depth_packet_processor.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971EA1BC077EC00141163 /* depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D21BC077EC00141163 /* depth_packet_processor.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971EB1BC077EC00141163 /* depth_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D31BC077EC00141163 /* depth_packet_stream_parser.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971EC1BC077EC00141163 /* double_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D41BC077EC00141163 /* double_buffer.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971ED1BC077EC00141163 /* event_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D51BC077EC00141163 /* event_loop.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971EE1BC077EC00141163 /* frame_listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D61BC077EC00141163 /* frame_listener.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971EF1BC077EC00141163 /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D71BC077EC00141163 /* resource.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971F01BC077EC00141163 /* rgb_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D81BC077EC00141163 /* rgb_packet_processor.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971F11BC077EC00141163 /* rgb_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971D91BC077EC00141163 /* rgb_packet_stream_parser.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971F21BC077EC00141163 /* tinythread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971E21BC077EC00141163 /* tinythread.cpp */; settings = {ASSET_TAGS = (); }; };
+		B29971F31BC077EC00141163 /* transfer_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B29971E41BC077EC00141163 /* transfer_pool.cpp */; settings = {ASSET_TAGS = (); }; };
 		B2D611071BB2D8DC009FF382 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611001BB2D8DC009FF382 /* ofxXmlSettings.cpp */; };
 		B2D611081BB2D8DC009FF382 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611031BB2D8DC009FF382 /* tinyxml.cpp */; };
 		B2D611091BB2D8DC009FF382 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611051BB2D8DC009FF382 /* tinyxmlerror.cpp */; };
@@ -19,21 +34,6 @@
 		B2D611231BB2D8E1009FF382 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611181BB2D8E1009FF382 /* ofxSlider.cpp */; };
 		B2D611241BB2D8E1009FF382 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6111A1BB2D8E1009FF382 /* ofxSliderGroup.cpp */; };
 		B2D611251BB2D8E1009FF382 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6111C1BB2D8E1009FF382 /* ofxToggle.cpp */; };
-		B2D6116C1BB2D8EB009FF382 /* ofxKinectV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611281BB2D8EB009FF382 /* ofxKinectV2.cpp */; };
-		B2D6116D1BB2D8EB009FF382 /* usb-1.0.0-superspeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D611421BB2D8EB009FF382 /* usb-1.0.0-superspeed.a */; };
-		B2D6116E1BB2D8EB009FF382 /* ofProtonect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611531BB2D8EB009FF382 /* ofProtonect.cpp */; };
-		B2D6116F1BB2D8EB009FF382 /* ofRGBPacketProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611551BB2D8EB009FF382 /* ofRGBPacketProcessor.cpp */; };
-		B2D611701BB2D8EB009FF382 /* cpu_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611581BB2D8EB009FF382 /* cpu_depth_packet_processor.cpp */; };
-		B2D611711BB2D8EB009FF382 /* depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611591BB2D8EB009FF382 /* depth_packet_processor.cpp */; };
-		B2D611721BB2D8EB009FF382 /* depth_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115A1BB2D8EB009FF382 /* depth_packet_stream_parser.cpp */; };
-		B2D611731BB2D8EB009FF382 /* double_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115B1BB2D8EB009FF382 /* double_buffer.cpp */; };
-		B2D611741BB2D8EB009FF382 /* event_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115C1BB2D8EB009FF382 /* event_loop.cpp */; };
-		B2D611751BB2D8EB009FF382 /* frame_listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115D1BB2D8EB009FF382 /* frame_listener.cpp */; };
-		B2D611761BB2D8EB009FF382 /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115E1BB2D8EB009FF382 /* resource.cpp */; };
-		B2D611771BB2D8EB009FF382 /* rgb_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6115F1BB2D8EB009FF382 /* rgb_packet_processor.cpp */; };
-		B2D611781BB2D8EB009FF382 /* rgb_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611601BB2D8EB009FF382 /* rgb_packet_stream_parser.cpp */; };
-		B2D611791BB2D8EB009FF382 /* tinythread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611691BB2D8EB009FF382 /* tinythread.cpp */; };
-		B2D6117A1BB2D8EB009FF382 /* transfer_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6116B1BB2D8EB009FF382 /* transfer_pool.cpp */; };
 		B2D611F51BB2D8ED009FF382 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D6117E1BB2D8ED009FF382 /* ofxCvColorImage.cpp */; };
 		B2D611F61BB2D8ED009FF382 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611811BB2D8ED009FF382 /* ofxCvContourFinder.cpp */; };
 		B2D611F71BB2D8ED009FF382 /* ofxCvFloatImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2D611831BB2D8ED009FF382 /* ofxCvFloatImage.cpp */; };
@@ -266,6 +266,58 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B29971A11BC077EC00141163 /* ofxKinectV2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectV2.cpp; sourceTree = "<group>"; };
+		B29971A21BC077EC00141163 /* ofxKinectV2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxKinectV2.h; sourceTree = "<group>"; };
+		B29971A61BC077EC00141163 /* libfreenect2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfreenect2.h; sourceTree = "<group>"; };
+		B29971AA1BC077EC00141163 /* hotplug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotplug.h; sourceTree = "<group>"; };
+		B29971AB1BC077EC00141163 /* libusb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		B29971AC1BC077EC00141163 /* libusbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusbi.h; sourceTree = "<group>"; };
+		B29971AE1BC077EC00141163 /* darwin_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darwin_usb.h; sourceTree = "<group>"; };
+		B29971AF1BC077EC00141163 /* linux_usbfs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linux_usbfs.h; sourceTree = "<group>"; };
+		B29971B01BC077EC00141163 /* poll_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = poll_posix.h; sourceTree = "<group>"; };
+		B29971B11BC077EC00141163 /* poll_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = poll_windows.h; sourceTree = "<group>"; };
+		B29971B21BC077EC00141163 /* threads_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads_posix.h; sourceTree = "<group>"; };
+		B29971B31BC077EC00141163 /* threads_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads_windows.h; sourceTree = "<group>"; };
+		B29971B41BC077EC00141163 /* wince_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wince_usb.h; sourceTree = "<group>"; };
+		B29971B51BC077EC00141163 /* windows_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = windows_common.h; sourceTree = "<group>"; };
+		B29971B61BC077EC00141163 /* windows_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = windows_usb.h; sourceTree = "<group>"; };
+		B29971B71BC077EC00141163 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		B29971B81BC077EC00141163 /* version_nano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version_nano.h; sourceTree = "<group>"; };
+		B29971BB1BC077EC00141163 /* usb-1.0.0-superspeed.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "usb-1.0.0-superspeed.a"; sourceTree = "<group>"; };
+		B29971BF1BC077EC00141163 /* async_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = async_packet_processor.h; sourceTree = "<group>"; };
+		B29971C01BC077EC00141163 /* depth_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = depth_packet_processor.h; sourceTree = "<group>"; };
+		B29971C11BC077EC00141163 /* depth_packet_stream_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = depth_packet_stream_parser.h; sourceTree = "<group>"; };
+		B29971C21BC077EC00141163 /* double_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = double_buffer.h; sourceTree = "<group>"; };
+		B29971C31BC077EC00141163 /* frame_listener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frame_listener.h; sourceTree = "<group>"; };
+		B29971C41BC077EC00141163 /* resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		B29971C51BC077EC00141163 /* rgb_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rgb_packet_processor.h; sourceTree = "<group>"; };
+		B29971C61BC077EC00141163 /* rgb_packet_stream_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rgb_packet_stream_parser.h; sourceTree = "<group>"; };
+		B29971C71BC077EC00141163 /* tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tables.h; sourceTree = "<group>"; };
+		B29971C81BC077EC00141163 /* threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
+		B29971CA1BC077EC00141163 /* event_loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event_loop.h; sourceTree = "<group>"; };
+		B29971CB1BC077EC00141163 /* transfer_pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transfer_pool.h; sourceTree = "<group>"; };
+		B29971CC1BC077EC00141163 /* ofProtonect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofProtonect.cpp; sourceTree = "<group>"; };
+		B29971CD1BC077EC00141163 /* ofProtonect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofProtonect.h; sourceTree = "<group>"; };
+		B29971CE1BC077EC00141163 /* ofRGBPacketProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofRGBPacketProcessor.cpp; sourceTree = "<group>"; };
+		B29971CF1BC077EC00141163 /* ofRGBPacketProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofRGBPacketProcessor.h; sourceTree = "<group>"; };
+		B29971D11BC077EC00141163 /* cpu_depth_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_depth_packet_processor.cpp; sourceTree = "<group>"; };
+		B29971D21BC077EC00141163 /* depth_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = depth_packet_processor.cpp; sourceTree = "<group>"; };
+		B29971D31BC077EC00141163 /* depth_packet_stream_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = depth_packet_stream_parser.cpp; sourceTree = "<group>"; };
+		B29971D41BC077EC00141163 /* double_buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = double_buffer.cpp; sourceTree = "<group>"; };
+		B29971D51BC077EC00141163 /* event_loop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = event_loop.cpp; sourceTree = "<group>"; };
+		B29971D61BC077EC00141163 /* frame_listener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frame_listener.cpp; sourceTree = "<group>"; };
+		B29971D71BC077EC00141163 /* resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resource.cpp; sourceTree = "<group>"; };
+		B29971D81BC077EC00141163 /* rgb_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rgb_packet_processor.cpp; sourceTree = "<group>"; };
+		B29971D91BC077EC00141163 /* rgb_packet_stream_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rgb_packet_stream_parser.cpp; sourceTree = "<group>"; };
+		B29971DB1BC077EC00141163 /* debug.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = debug.fs; sourceTree = "<group>"; };
+		B29971DC1BC077EC00141163 /* default.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = default.vs; sourceTree = "<group>"; };
+		B29971DD1BC077EC00141163 /* filter1.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = filter1.fs; sourceTree = "<group>"; };
+		B29971DE1BC077EC00141163 /* filter2.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = filter2.fs; sourceTree = "<group>"; };
+		B29971DF1BC077EC00141163 /* stage1.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stage1.fs; sourceTree = "<group>"; };
+		B29971E01BC077EC00141163 /* stage2.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stage2.fs; sourceTree = "<group>"; };
+		B29971E21BC077EC00141163 /* tinythread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinythread.cpp; sourceTree = "<group>"; };
+		B29971E31BC077EC00141163 /* tinythread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinythread.h; sourceTree = "<group>"; };
+		B29971E41BC077EC00141163 /* transfer_pool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transfer_pool.cpp; sourceTree = "<group>"; };
 		B2D611001BB2D8DC009FF382 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		B2D611011BB2D8DC009FF382 /* ofxXmlSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 		B2D611031BB2D8DC009FF382 /* tinyxml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
@@ -289,58 +341,6 @@
 		B2D6111B1BB2D8E1009FF382 /* ofxSliderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
 		B2D6111C1BB2D8E1009FF382 /* ofxToggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
 		B2D6111D1BB2D8E1009FF382 /* ofxToggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
-		B2D611281BB2D8EB009FF382 /* ofxKinectV2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectV2.cpp; sourceTree = "<group>"; };
-		B2D611291BB2D8EB009FF382 /* ofxKinectV2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxKinectV2.h; sourceTree = "<group>"; };
-		B2D6112D1BB2D8EB009FF382 /* libfreenect2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfreenect2.h; sourceTree = "<group>"; };
-		B2D611311BB2D8EB009FF382 /* hotplug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotplug.h; sourceTree = "<group>"; };
-		B2D611321BB2D8EB009FF382 /* libusb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
-		B2D611331BB2D8EB009FF382 /* libusbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusbi.h; sourceTree = "<group>"; };
-		B2D611351BB2D8EB009FF382 /* darwin_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darwin_usb.h; sourceTree = "<group>"; };
-		B2D611361BB2D8EB009FF382 /* linux_usbfs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linux_usbfs.h; sourceTree = "<group>"; };
-		B2D611371BB2D8EB009FF382 /* poll_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = poll_posix.h; sourceTree = "<group>"; };
-		B2D611381BB2D8EB009FF382 /* poll_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = poll_windows.h; sourceTree = "<group>"; };
-		B2D611391BB2D8EB009FF382 /* threads_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads_posix.h; sourceTree = "<group>"; };
-		B2D6113A1BB2D8EB009FF382 /* threads_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads_windows.h; sourceTree = "<group>"; };
-		B2D6113B1BB2D8EB009FF382 /* wince_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wince_usb.h; sourceTree = "<group>"; };
-		B2D6113C1BB2D8EB009FF382 /* windows_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = windows_common.h; sourceTree = "<group>"; };
-		B2D6113D1BB2D8EB009FF382 /* windows_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = windows_usb.h; sourceTree = "<group>"; };
-		B2D6113E1BB2D8EB009FF382 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		B2D6113F1BB2D8EB009FF382 /* version_nano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version_nano.h; sourceTree = "<group>"; };
-		B2D611421BB2D8EB009FF382 /* usb-1.0.0-superspeed.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "usb-1.0.0-superspeed.a"; sourceTree = "<group>"; };
-		B2D611461BB2D8EB009FF382 /* async_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = async_packet_processor.h; sourceTree = "<group>"; };
-		B2D611471BB2D8EB009FF382 /* depth_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = depth_packet_processor.h; sourceTree = "<group>"; };
-		B2D611481BB2D8EB009FF382 /* depth_packet_stream_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = depth_packet_stream_parser.h; sourceTree = "<group>"; };
-		B2D611491BB2D8EB009FF382 /* double_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = double_buffer.h; sourceTree = "<group>"; };
-		B2D6114A1BB2D8EB009FF382 /* frame_listener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frame_listener.h; sourceTree = "<group>"; };
-		B2D6114B1BB2D8EB009FF382 /* resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
-		B2D6114C1BB2D8EB009FF382 /* rgb_packet_processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rgb_packet_processor.h; sourceTree = "<group>"; };
-		B2D6114D1BB2D8EB009FF382 /* rgb_packet_stream_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rgb_packet_stream_parser.h; sourceTree = "<group>"; };
-		B2D6114E1BB2D8EB009FF382 /* tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tables.h; sourceTree = "<group>"; };
-		B2D6114F1BB2D8EB009FF382 /* threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
-		B2D611511BB2D8EB009FF382 /* event_loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event_loop.h; sourceTree = "<group>"; };
-		B2D611521BB2D8EB009FF382 /* transfer_pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transfer_pool.h; sourceTree = "<group>"; };
-		B2D611531BB2D8EB009FF382 /* ofProtonect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofProtonect.cpp; sourceTree = "<group>"; };
-		B2D611541BB2D8EB009FF382 /* ofProtonect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofProtonect.h; sourceTree = "<group>"; };
-		B2D611551BB2D8EB009FF382 /* ofRGBPacketProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofRGBPacketProcessor.cpp; sourceTree = "<group>"; };
-		B2D611561BB2D8EB009FF382 /* ofRGBPacketProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofRGBPacketProcessor.h; sourceTree = "<group>"; };
-		B2D611581BB2D8EB009FF382 /* cpu_depth_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_depth_packet_processor.cpp; sourceTree = "<group>"; };
-		B2D611591BB2D8EB009FF382 /* depth_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = depth_packet_processor.cpp; sourceTree = "<group>"; };
-		B2D6115A1BB2D8EB009FF382 /* depth_packet_stream_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = depth_packet_stream_parser.cpp; sourceTree = "<group>"; };
-		B2D6115B1BB2D8EB009FF382 /* double_buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = double_buffer.cpp; sourceTree = "<group>"; };
-		B2D6115C1BB2D8EB009FF382 /* event_loop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = event_loop.cpp; sourceTree = "<group>"; };
-		B2D6115D1BB2D8EB009FF382 /* frame_listener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frame_listener.cpp; sourceTree = "<group>"; };
-		B2D6115E1BB2D8EB009FF382 /* resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resource.cpp; sourceTree = "<group>"; };
-		B2D6115F1BB2D8EB009FF382 /* rgb_packet_processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rgb_packet_processor.cpp; sourceTree = "<group>"; };
-		B2D611601BB2D8EB009FF382 /* rgb_packet_stream_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rgb_packet_stream_parser.cpp; sourceTree = "<group>"; };
-		B2D611621BB2D8EB009FF382 /* debug.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = debug.fs; sourceTree = "<group>"; };
-		B2D611631BB2D8EB009FF382 /* default.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = default.vs; sourceTree = "<group>"; };
-		B2D611641BB2D8EB009FF382 /* filter1.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = filter1.fs; sourceTree = "<group>"; };
-		B2D611651BB2D8EB009FF382 /* filter2.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = filter2.fs; sourceTree = "<group>"; };
-		B2D611661BB2D8EB009FF382 /* stage1.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stage1.fs; sourceTree = "<group>"; };
-		B2D611671BB2D8EB009FF382 /* stage2.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = stage2.fs; sourceTree = "<group>"; };
-		B2D611691BB2D8EB009FF382 /* tinythread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinythread.cpp; sourceTree = "<group>"; };
-		B2D6116A1BB2D8EB009FF382 /* tinythread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinythread.h; sourceTree = "<group>"; };
-		B2D6116B1BB2D8EB009FF382 /* transfer_pool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transfer_pool.cpp; sourceTree = "<group>"; };
 		B2D6117D1BB2D8ED009FF382 /* ofxCvBlob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCvBlob.h; sourceTree = "<group>"; };
 		B2D6117E1BB2D8ED009FF382 /* ofxCvColorImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCvColorImage.cpp; sourceTree = "<group>"; };
 		B2D6117F1BB2D8ED009FF382 /* ofxCvColorImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCvColorImage.h; sourceTree = "<group>"; };
@@ -924,6 +924,7 @@
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				B2D614A91BB2D8F7009FF382 /* libBulletSoftBody.a in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
+				B29971E61BC077EC00141163 /* usb-1.0.0-superspeed.a in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
 				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
 				B2D614AA1BB2D8F7009FF382 /* libLinearMath.a in Frameworks */,
@@ -939,7 +940,6 @@
 				B2D614A41BB2D8F7009FF382 /* libBulletDynamics.a in Frameworks */,
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				B2D614A51BB2D8F7009FF382 /* libBulletSoftBody.a in Frameworks */,
-				B2D6116D1BB2D8EB009FF382 /* usb-1.0.0-superspeed.a in Frameworks */,
 				B2D614A01BB2D8F7009FF382 /* libBulletDynamics.a in Frameworks */,
 				B2D614A31BB2D8F7009FF382 /* libBulletCollision.a in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
@@ -950,6 +950,203 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B299719F1BC077EC00141163 /* ofxKinectV2_aware */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A01BC077EC00141163 /* src */,
+				B29971A31BC077EC00141163 /* libs */,
+			);
+			name = ofxKinectV2_aware;
+			sourceTree = "<group>";
+		};
+		B29971A01BC077EC00141163 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A11BC077EC00141163 /* ofxKinectV2.cpp */,
+				B29971A21BC077EC00141163 /* ofxKinectV2.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxKinectV2_aware/src;
+			sourceTree = "<group>";
+		};
+		B29971A31BC077EC00141163 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A41BC077EC00141163 /* libfreenect2 */,
+				B29971A71BC077EC00141163 /* libusb */,
+				B29971BC1BC077EC00141163 /* protonect */,
+			);
+			name = libs;
+			path = ../../../addons/ofxKinectV2_aware/libs;
+			sourceTree = "<group>";
+		};
+		B29971A41BC077EC00141163 /* libfreenect2 */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A51BC077EC00141163 /* include */,
+			);
+			path = libfreenect2;
+			sourceTree = "<group>";
+		};
+		B29971A51BC077EC00141163 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A61BC077EC00141163 /* libfreenect2.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B29971A71BC077EC00141163 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A81BC077EC00141163 /* include */,
+				B29971B91BC077EC00141163 /* lib */,
+			);
+			path = libusb;
+			sourceTree = "<group>";
+		};
+		B29971A81BC077EC00141163 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B29971A91BC077EC00141163 /* libusb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B29971A91BC077EC00141163 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				B29971AA1BC077EC00141163 /* hotplug.h */,
+				B29971AB1BC077EC00141163 /* libusb.h */,
+				B29971AC1BC077EC00141163 /* libusbi.h */,
+				B29971AD1BC077EC00141163 /* os */,
+				B29971B71BC077EC00141163 /* version.h */,
+				B29971B81BC077EC00141163 /* version_nano.h */,
+			);
+			path = libusb;
+			sourceTree = "<group>";
+		};
+		B29971AD1BC077EC00141163 /* os */ = {
+			isa = PBXGroup;
+			children = (
+				B29971AE1BC077EC00141163 /* darwin_usb.h */,
+				B29971AF1BC077EC00141163 /* linux_usbfs.h */,
+				B29971B01BC077EC00141163 /* poll_posix.h */,
+				B29971B11BC077EC00141163 /* poll_windows.h */,
+				B29971B21BC077EC00141163 /* threads_posix.h */,
+				B29971B31BC077EC00141163 /* threads_windows.h */,
+				B29971B41BC077EC00141163 /* wince_usb.h */,
+				B29971B51BC077EC00141163 /* windows_common.h */,
+				B29971B61BC077EC00141163 /* windows_usb.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		B29971B91BC077EC00141163 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B29971BA1BC077EC00141163 /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B29971BA1BC077EC00141163 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				B29971BB1BC077EC00141163 /* usb-1.0.0-superspeed.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		B29971BC1BC077EC00141163 /* protonect */ = {
+			isa = PBXGroup;
+			children = (
+				B29971BD1BC077EC00141163 /* include */,
+				B29971CC1BC077EC00141163 /* ofProtonect.cpp */,
+				B29971CD1BC077EC00141163 /* ofProtonect.h */,
+				B29971CE1BC077EC00141163 /* ofRGBPacketProcessor.cpp */,
+				B29971CF1BC077EC00141163 /* ofRGBPacketProcessor.h */,
+				B29971D01BC077EC00141163 /* src */,
+			);
+			path = protonect;
+			sourceTree = "<group>";
+		};
+		B29971BD1BC077EC00141163 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B29971BE1BC077EC00141163 /* libfreenect2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B29971BE1BC077EC00141163 /* libfreenect2 */ = {
+			isa = PBXGroup;
+			children = (
+				B29971BF1BC077EC00141163 /* async_packet_processor.h */,
+				B29971C01BC077EC00141163 /* depth_packet_processor.h */,
+				B29971C11BC077EC00141163 /* depth_packet_stream_parser.h */,
+				B29971C21BC077EC00141163 /* double_buffer.h */,
+				B29971C31BC077EC00141163 /* frame_listener.h */,
+				B29971C41BC077EC00141163 /* resource.h */,
+				B29971C51BC077EC00141163 /* rgb_packet_processor.h */,
+				B29971C61BC077EC00141163 /* rgb_packet_stream_parser.h */,
+				B29971C71BC077EC00141163 /* tables.h */,
+				B29971C81BC077EC00141163 /* threading.h */,
+				B29971C91BC077EC00141163 /* usb */,
+			);
+			path = libfreenect2;
+			sourceTree = "<group>";
+		};
+		B29971C91BC077EC00141163 /* usb */ = {
+			isa = PBXGroup;
+			children = (
+				B29971CA1BC077EC00141163 /* event_loop.h */,
+				B29971CB1BC077EC00141163 /* transfer_pool.h */,
+			);
+			path = usb;
+			sourceTree = "<group>";
+		};
+		B29971D01BC077EC00141163 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B29971D11BC077EC00141163 /* cpu_depth_packet_processor.cpp */,
+				B29971D21BC077EC00141163 /* depth_packet_processor.cpp */,
+				B29971D31BC077EC00141163 /* depth_packet_stream_parser.cpp */,
+				B29971D41BC077EC00141163 /* double_buffer.cpp */,
+				B29971D51BC077EC00141163 /* event_loop.cpp */,
+				B29971D61BC077EC00141163 /* frame_listener.cpp */,
+				B29971D71BC077EC00141163 /* resource.cpp */,
+				B29971D81BC077EC00141163 /* rgb_packet_processor.cpp */,
+				B29971D91BC077EC00141163 /* rgb_packet_stream_parser.cpp */,
+				B29971DA1BC077EC00141163 /* shader */,
+				B29971E11BC077EC00141163 /* tinythread */,
+				B29971E41BC077EC00141163 /* transfer_pool.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B29971DA1BC077EC00141163 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				B29971DB1BC077EC00141163 /* debug.fs */,
+				B29971DC1BC077EC00141163 /* default.vs */,
+				B29971DD1BC077EC00141163 /* filter1.fs */,
+				B29971DE1BC077EC00141163 /* filter2.fs */,
+				B29971DF1BC077EC00141163 /* stage1.fs */,
+				B29971E01BC077EC00141163 /* stage2.fs */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		B29971E11BC077EC00141163 /* tinythread */ = {
+			isa = PBXGroup;
+			children = (
+				B29971E21BC077EC00141163 /* tinythread.cpp */,
+				B29971E31BC077EC00141163 /* tinythread.h */,
+			);
+			path = tinythread;
+			sourceTree = "<group>";
+		};
 		B2D610FE1BB2D8DC009FF382 /* ofxXmlSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -1012,203 +1209,6 @@
 			);
 			name = src;
 			path = ../../../addons/ofxGui/src;
-			sourceTree = "<group>";
-		};
-		B2D611261BB2D8EB009FF382 /* ofxKinectV2_aware */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611271BB2D8EB009FF382 /* src */,
-				B2D6112A1BB2D8EB009FF382 /* libs */,
-			);
-			name = ofxKinectV2_aware;
-			sourceTree = "<group>";
-		};
-		B2D611271BB2D8EB009FF382 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611281BB2D8EB009FF382 /* ofxKinectV2.cpp */,
-				B2D611291BB2D8EB009FF382 /* ofxKinectV2.h */,
-			);
-			name = src;
-			path = ../../../addons/ofxKinectV2_aware/src;
-			sourceTree = "<group>";
-		};
-		B2D6112A1BB2D8EB009FF382 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				B2D6112B1BB2D8EB009FF382 /* libfreenect2 */,
-				B2D6112E1BB2D8EB009FF382 /* libusb */,
-				B2D611431BB2D8EB009FF382 /* protonect */,
-			);
-			name = libs;
-			path = ../../../addons/ofxKinectV2_aware/libs;
-			sourceTree = "<group>";
-		};
-		B2D6112B1BB2D8EB009FF382 /* libfreenect2 */ = {
-			isa = PBXGroup;
-			children = (
-				B2D6112C1BB2D8EB009FF382 /* include */,
-			);
-			path = libfreenect2;
-			sourceTree = "<group>";
-		};
-		B2D6112C1BB2D8EB009FF382 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B2D6112D1BB2D8EB009FF382 /* libfreenect2.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		B2D6112E1BB2D8EB009FF382 /* libusb */ = {
-			isa = PBXGroup;
-			children = (
-				B2D6112F1BB2D8EB009FF382 /* include */,
-				B2D611401BB2D8EB009FF382 /* lib */,
-			);
-			path = libusb;
-			sourceTree = "<group>";
-		};
-		B2D6112F1BB2D8EB009FF382 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611301BB2D8EB009FF382 /* libusb */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		B2D611301BB2D8EB009FF382 /* libusb */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611311BB2D8EB009FF382 /* hotplug.h */,
-				B2D611321BB2D8EB009FF382 /* libusb.h */,
-				B2D611331BB2D8EB009FF382 /* libusbi.h */,
-				B2D611341BB2D8EB009FF382 /* os */,
-				B2D6113E1BB2D8EB009FF382 /* version.h */,
-				B2D6113F1BB2D8EB009FF382 /* version_nano.h */,
-			);
-			path = libusb;
-			sourceTree = "<group>";
-		};
-		B2D611341BB2D8EB009FF382 /* os */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611351BB2D8EB009FF382 /* darwin_usb.h */,
-				B2D611361BB2D8EB009FF382 /* linux_usbfs.h */,
-				B2D611371BB2D8EB009FF382 /* poll_posix.h */,
-				B2D611381BB2D8EB009FF382 /* poll_windows.h */,
-				B2D611391BB2D8EB009FF382 /* threads_posix.h */,
-				B2D6113A1BB2D8EB009FF382 /* threads_windows.h */,
-				B2D6113B1BB2D8EB009FF382 /* wince_usb.h */,
-				B2D6113C1BB2D8EB009FF382 /* windows_common.h */,
-				B2D6113D1BB2D8EB009FF382 /* windows_usb.h */,
-			);
-			path = os;
-			sourceTree = "<group>";
-		};
-		B2D611401BB2D8EB009FF382 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611411BB2D8EB009FF382 /* osx */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		B2D611411BB2D8EB009FF382 /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611421BB2D8EB009FF382 /* usb-1.0.0-superspeed.a */,
-			);
-			path = osx;
-			sourceTree = "<group>";
-		};
-		B2D611431BB2D8EB009FF382 /* protonect */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611441BB2D8EB009FF382 /* include */,
-				B2D611531BB2D8EB009FF382 /* ofProtonect.cpp */,
-				B2D611541BB2D8EB009FF382 /* ofProtonect.h */,
-				B2D611551BB2D8EB009FF382 /* ofRGBPacketProcessor.cpp */,
-				B2D611561BB2D8EB009FF382 /* ofRGBPacketProcessor.h */,
-				B2D611571BB2D8EB009FF382 /* src */,
-			);
-			path = protonect;
-			sourceTree = "<group>";
-		};
-		B2D611441BB2D8EB009FF382 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611451BB2D8EB009FF382 /* libfreenect2 */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		B2D611451BB2D8EB009FF382 /* libfreenect2 */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611461BB2D8EB009FF382 /* async_packet_processor.h */,
-				B2D611471BB2D8EB009FF382 /* depth_packet_processor.h */,
-				B2D611481BB2D8EB009FF382 /* depth_packet_stream_parser.h */,
-				B2D611491BB2D8EB009FF382 /* double_buffer.h */,
-				B2D6114A1BB2D8EB009FF382 /* frame_listener.h */,
-				B2D6114B1BB2D8EB009FF382 /* resource.h */,
-				B2D6114C1BB2D8EB009FF382 /* rgb_packet_processor.h */,
-				B2D6114D1BB2D8EB009FF382 /* rgb_packet_stream_parser.h */,
-				B2D6114E1BB2D8EB009FF382 /* tables.h */,
-				B2D6114F1BB2D8EB009FF382 /* threading.h */,
-				B2D611501BB2D8EB009FF382 /* usb */,
-			);
-			path = libfreenect2;
-			sourceTree = "<group>";
-		};
-		B2D611501BB2D8EB009FF382 /* usb */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611511BB2D8EB009FF382 /* event_loop.h */,
-				B2D611521BB2D8EB009FF382 /* transfer_pool.h */,
-			);
-			path = usb;
-			sourceTree = "<group>";
-		};
-		B2D611571BB2D8EB009FF382 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611581BB2D8EB009FF382 /* cpu_depth_packet_processor.cpp */,
-				B2D611591BB2D8EB009FF382 /* depth_packet_processor.cpp */,
-				B2D6115A1BB2D8EB009FF382 /* depth_packet_stream_parser.cpp */,
-				B2D6115B1BB2D8EB009FF382 /* double_buffer.cpp */,
-				B2D6115C1BB2D8EB009FF382 /* event_loop.cpp */,
-				B2D6115D1BB2D8EB009FF382 /* frame_listener.cpp */,
-				B2D6115E1BB2D8EB009FF382 /* resource.cpp */,
-				B2D6115F1BB2D8EB009FF382 /* rgb_packet_processor.cpp */,
-				B2D611601BB2D8EB009FF382 /* rgb_packet_stream_parser.cpp */,
-				B2D611611BB2D8EB009FF382 /* shader */,
-				B2D611681BB2D8EB009FF382 /* tinythread */,
-				B2D6116B1BB2D8EB009FF382 /* transfer_pool.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		B2D611611BB2D8EB009FF382 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611621BB2D8EB009FF382 /* debug.fs */,
-				B2D611631BB2D8EB009FF382 /* default.vs */,
-				B2D611641BB2D8EB009FF382 /* filter1.fs */,
-				B2D611651BB2D8EB009FF382 /* filter2.fs */,
-				B2D611661BB2D8EB009FF382 /* stage1.fs */,
-				B2D611671BB2D8EB009FF382 /* stage2.fs */,
-			);
-			path = shader;
-			sourceTree = "<group>";
-		};
-		B2D611681BB2D8EB009FF382 /* tinythread */ = {
-			isa = PBXGroup;
-			children = (
-				B2D611691BB2D8EB009FF382 /* tinythread.cpp */,
-				B2D6116A1BB2D8EB009FF382 /* tinythread.h */,
-			);
-			path = tinythread;
 			sourceTree = "<group>";
 		};
 		B2D6117B1BB2D8ED009FF382 /* ofxOpenCv */ = {
@@ -2201,9 +2201,9 @@
 			children = (
 				B2D610FE1BB2D8DC009FF382 /* ofxXmlSettings */,
 				B2D6110B1BB2D8E1009FF382 /* ofxGui */,
-				B2D611261BB2D8EB009FF382 /* ofxKinectV2_aware */,
 				B2D6117B1BB2D8ED009FF382 /* ofxOpenCv */,
 				B2D611FD1BB2D8F6009FF382 /* ofxBullet */,
+				B299719F1BC077EC00141163 /* ofxKinectV2_aware */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -2384,7 +2384,6 @@
 				B2D6144E1BB2D8F6009FF382 /* btShapeHull.cpp in Sources */,
 				B2D611071BB2D8DC009FF382 /* ofxXmlSettings.cpp in Sources */,
 				B2D614751BB2D8F6009FF382 /* btGearConstraint.cpp in Sources */,
-				B2D611701BB2D8EB009FF382 /* cpu_depth_packet_processor.cpp in Sources */,
 				B2D611251BB2D8E1009FF382 /* ofxToggle.cpp in Sources */,
 				B2D614201BB2D8F6009FF382 /* btBoxBoxDetector.cpp in Sources */,
 				B2D614911BB2D8F6009FF382 /* btSoftBodyConcaveCollisionAlgorithm.cpp in Sources */,
@@ -2400,6 +2399,7 @@
 				B2D614621BB2D8F6009FF382 /* gim_contact.cpp in Sources */,
 				B2D614441BB2D8F6009FF382 /* btConvexTriangleMeshShape.cpp in Sources */,
 				B2D614741BB2D8F6009FF382 /* btFixedConstraint.cpp in Sources */,
+				B29971F01BC077EC00141163 /* rgb_packet_processor.cpp in Sources */,
 				B2D614271BB2D8F6009FF382 /* btConvexConcaveCollisionAlgorithm.cpp in Sources */,
 				B2D614831BB2D8F6009FF382 /* Bullet-C-API.cpp in Sources */,
 				B2D614521BB2D8F6009FF382 /* btTetrahedronShape.cpp in Sources */,
@@ -2416,28 +2416,26 @@
 				B2D6148C1BB2D8F6009FF382 /* btMLCPSolver.cpp in Sources */,
 				B2D614951BB2D8F6009FF382 /* btSoftRigidDynamicsWorld.cpp in Sources */,
 				B2D614571BB2D8F6009FF382 /* btTriangleMesh.cpp in Sources */,
-				B2D6116E1BB2D8EB009FF382 /* ofProtonect.cpp in Sources */,
 				B2D614991BB2D8F6009FF382 /* btConvexHullComputer.cpp in Sources */,
 				B2D614771BB2D8F6009FF382 /* btGeneric6DofSpringConstraint.cpp in Sources */,
 				B2D6143F1BB2D8F6009FF382 /* btConvexHullShape.cpp in Sources */,
 				B2D6146A1BB2D8F6009FF382 /* btGjkPairDetector.cpp in Sources */,
-				B2D611761BB2D8EB009FF382 /* resource.cpp in Sources */,
-				B2D6116C1BB2D8EB009FF382 /* ofxKinectV2.cpp in Sources */,
 				B2D6140F1BB2D8F6009FF382 /* ofxBulletSoftTriMesh.cpp in Sources */,
 				B2D614731BB2D8F6009FF382 /* btContactConstraint.cpp in Sources */,
 				B2D614311BB2D8F6009FF382 /* btSphereBoxCollisionAlgorithm.cpp in Sources */,
+				B29971ED1BC077EC00141163 /* event_loop.cpp in Sources */,
 				B2D611211BB2D8E1009FF382 /* ofxLabel.cpp in Sources */,
 				B2D6140E1BB2D8F6009FF382 /* ofxBulletSoftBody.cpp in Sources */,
 				B2D611241BB2D8E1009FF382 /* ofxSliderGroup.cpp in Sources */,
 				B2D6143D1BB2D8F6009FF382 /* btConeShape.cpp in Sources */,
 				B2D614091BB2D8F6009FF382 /* ofxBulletCylinder.cpp in Sources */,
-				B2D611771BB2D8EB009FF382 /* rgb_packet_processor.cpp in Sources */,
 				B2D614421BB2D8F6009FF382 /* btConvexPolyhedron.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				B2D6149D1BB2D8F6009FF382 /* btSerializer.cpp in Sources */,
 				B2D6144A1BB2D8F6009FF382 /* btMultiSphereShape.cpp in Sources */,
 				B2D611FB1BB2D8ED009FF382 /* ofxCvShortImage.cpp in Sources */,
 				B2D614141BB2D8F6009FF382 /* btBroadphaseProxy.cpp in Sources */,
+				B29971EA1BC077EC00141163 /* depth_packet_processor.cpp in Sources */,
 				B2D611091BB2D8DC009FF382 /* tinyxmlerror.cpp in Sources */,
 				B2D611F91BB2D8ED009FF382 /* ofxCvHaarFinder.cpp in Sources */,
 				B2D614611BB2D8F6009FF382 /* gim_box_set.cpp in Sources */,
@@ -2446,6 +2444,7 @@
 				B2D6146C1BB2D8F6009FF382 /* btPersistentManifold.cpp in Sources */,
 				B2D614391BB2D8F6009FF382 /* btCapsuleShape.cpp in Sources */,
 				B2D614011BB2D8F6009FF382 /* ofxBulletWorldSoft.cpp in Sources */,
+				B29971F21BC077EC00141163 /* tinythread.cpp in Sources */,
 				B2D6141E1BB2D8F6009FF382 /* btBox2dBox2dCollisionAlgorithm.cpp in Sources */,
 				B2D6140C1BB2D8F6009FF382 /* ofxBulletRigidBody.cpp in Sources */,
 				B2D611F81BB2D8ED009FF382 /* ofxCvGrayscaleImage.cpp in Sources */,
@@ -2460,15 +2459,14 @@
 				B2D614721BB2D8F6009FF382 /* btConeTwistConstraint.cpp in Sources */,
 				B2D614171BB2D8F6009FF382 /* btDbvtBroadphase.cpp in Sources */,
 				B2D6146B1BB2D8F6009FF382 /* btMinkowskiPenetrationDepthSolver.cpp in Sources */,
+				B29971E71BC077EC00141163 /* ofProtonect.cpp in Sources */,
 				B2D6142B1BB2D8F6009FF382 /* btEmptyCollisionAlgorithm.cpp in Sources */,
-				B2D6116F1BB2D8EB009FF382 /* ofRGBPacketProcessor.cpp in Sources */,
 				B2D6149E1BB2D8F6009FF382 /* btVector3.cpp in Sources */,
 				B2D614791BB2D8F6009FF382 /* btHingeConstraint.cpp in Sources */,
 				B2D614131BB2D8F6009FF382 /* btAxisSweep3.cpp in Sources */,
 				B2D614411BB2D8F6009FF382 /* btConvexPointCloudShape.cpp in Sources */,
 				B2D6144F1BB2D8F6009FF382 /* btSphereShape.cpp in Sources */,
 				B2D614631BB2D8F6009FF382 /* gim_memory.cpp in Sources */,
-				B2D611731BB2D8EB009FF382 /* double_buffer.cpp in Sources */,
 				B2D614581BB2D8F6009FF382 /* btTriangleMeshShape.cpp in Sources */,
 				B2D614561BB2D8F6009FF382 /* btTriangleIndexVertexMaterialArray.cpp in Sources */,
 				B2D614671BB2D8F6009FF382 /* btGjkConvexCast.cpp in Sources */,
@@ -2477,7 +2475,6 @@
 				B2D614701BB2D8F6009FF382 /* btVoronoiSimplexSolver.cpp in Sources */,
 				B2D614341BB2D8F6009FF382 /* btUnionFind.cpp in Sources */,
 				B2D6148F1BB2D8F6009FF382 /* btDefaultSoftBodySolver.cpp in Sources */,
-				B2D611791BB2D8EB009FF382 /* tinythread.cpp in Sources */,
 				B2D613FF1BB2D8F6009FF382 /* ofxBulletJoint.cpp in Sources */,
 				B2D614251BB2D8F6009FF382 /* btCompoundCompoundCollisionAlgorithm.cpp in Sources */,
 				B2D6149A1BB2D8F6009FF382 /* btGeometryUtil.cpp in Sources */,
@@ -2493,11 +2490,9 @@
 				B2D614301BB2D8F6009FF382 /* btSimulationIslandManager.cpp in Sources */,
 				B2D614931BB2D8F6009FF382 /* btSoftBodyRigidBodyCollisionConfiguration.cpp in Sources */,
 				B2D614531BB2D8F6009FF382 /* btTriangleBuffer.cpp in Sources */,
-				B2D611741BB2D8EB009FF382 /* event_loop.cpp in Sources */,
 				B2D614281BB2D8F6009FF382 /* btConvexConvexAlgorithm.cpp in Sources */,
 				B2D614801BB2D8F6009FF382 /* btDiscreteDynamicsWorld.cpp in Sources */,
 				B2D614901BB2D8F6009FF382 /* btSoftBody.cpp in Sources */,
-				B2D611711BB2D8EB009FF382 /* depth_packet_processor.cpp in Sources */,
 				B2D6146F1BB2D8F6009FF382 /* btSubSimplexConvexCast.cpp in Sources */,
 				B2D6147D1BB2D8F6009FF382 /* btSolve2LinearConstraint.cpp in Sources */,
 				B2D614971BB2D8F6009FF382 /* btAlignedAllocator.cpp in Sources */,
@@ -2505,21 +2500,23 @@
 				B2D614051BB2D8F6009FF382 /* ofxBulletCapsule.cpp in Sources */,
 				B2D614071BB2D8F6009FF382 /* ofxBulletConvexShape.cpp in Sources */,
 				B2D614601BB2D8F6009FF382 /* btTriangleShapeEx.cpp in Sources */,
-				B2D611751BB2D8EB009FF382 /* frame_listener.cpp in Sources */,
 				B2D614541BB2D8F6009FF382 /* btTriangleCallback.cpp in Sources */,
 				B2D6148E1BB2D8F6009FF382 /* btWheelInfo.cpp in Sources */,
 				B2D6145B1BB2D8F6009FF382 /* btGenericPoolAllocator.cpp in Sources */,
+				B29971E51BC077EC00141163 /* ofxKinectV2.cpp in Sources */,
 				B2D614501BB2D8F6009FF382 /* btStaticPlaneShape.cpp in Sources */,
 				B2D6148A1BB2D8F6009FF382 /* btMultiBodyPoint2Point.cpp in Sources */,
 				B2D6141B1BB2D8F6009FF382 /* btQuantizedBvh.cpp in Sources */,
 				B2D614891BB2D8F6009FF382 /* btMultiBodyJointMotor.cpp in Sources */,
 				B2D6149C1BB2D8F6009FF382 /* btQuickprof.cpp in Sources */,
 				B2D614001BB2D8F6009FF382 /* ofxBulletWorldRigid.cpp in Sources */,
+				B29971EC1BC077EC00141163 /* double_buffer.cpp in Sources */,
 				B2D611FA1BB2D8ED009FF382 /* ofxCvImage.cpp in Sources */,
-				B2D6117A1BB2D8EB009FF382 /* transfer_pool.cpp in Sources */,
 				B2D6142D1BB2D8F6009FF382 /* btHashedSimplePairCache.cpp in Sources */,
 				B2D614111BB2D8F6009FF382 /* ofxBulletStaticPlane.cpp in Sources */,
+				B29971EE1BC077EC00141163 /* frame_listener.cpp in Sources */,
 				B2D6110A1BB2D8DC009FF382 /* tinyxmlparser.cpp in Sources */,
+				B29971F11BC077EC00141163 /* rgb_packet_stream_parser.cpp in Sources */,
 				B2D614371BB2D8F6009FF382 /* btBoxShape.cpp in Sources */,
 				B2D614921BB2D8F6009FF382 /* btSoftBodyHelpers.cpp in Sources */,
 				B2D614511BB2D8F6009FF382 /* btStridingMeshInterface.cpp in Sources */,
@@ -2529,7 +2526,7 @@
 				B2D6143E1BB2D8F6009FF382 /* btConvex2dShape.cpp in Sources */,
 				B2D6145F1BB2D8F6009FF382 /* btGImpactShape.cpp in Sources */,
 				B2D6144C1BB2D8F6009FF382 /* btPolyhedralConvexShape.cpp in Sources */,
-				B2D611781BB2D8EB009FF382 /* rgb_packet_stream_parser.cpp in Sources */,
+				B29971EF1BC077EC00141163 /* resource.cpp in Sources */,
 				B2D6146E1BB2D8F6009FF382 /* btRaycastCallback.cpp in Sources */,
 				B2D6140B1BB2D8F6009FF382 /* ofxBulletPatch.cpp in Sources */,
 				B2D6141C1BB2D8F6009FF382 /* btSimpleBroadphase.cpp in Sources */,
@@ -2537,8 +2534,11 @@
 				B2D614651BB2D8F6009FF382 /* btContinuousConvexCollision.cpp in Sources */,
 				B2D6143A1BB2D8F6009FF382 /* btCollisionShape.cpp in Sources */,
 				B2D6111E1BB2D8E1009FF382 /* ofxBaseGui.cpp in Sources */,
+				B29971E81BC077EC00141163 /* ofRGBPacketProcessor.cpp in Sources */,
+				B29971EB1BC077EC00141163 /* depth_packet_stream_parser.cpp in Sources */,
 				B2D6144B1BB2D8F6009FF382 /* btOptimizedBvh.cpp in Sources */,
 				B2D6143B1BB2D8F6009FF382 /* btCompoundShape.cpp in Sources */,
+				B29971E91BC077EC00141163 /* cpu_depth_packet_processor.cpp in Sources */,
 				B2D614761BB2D8F6009FF382 /* btGeneric6DofConstraint.cpp in Sources */,
 				B2D6145E1BB2D8F6009FF382 /* btGImpactQuantizedBvh.cpp in Sources */,
 				B2D6147B1BB2D8F6009FF382 /* btSequentialImpulseConstraintSolver.cpp in Sources */,
@@ -2559,13 +2559,13 @@
 				B2D614211BB2D8F6009FF382 /* btCollisionDispatcher.cpp in Sources */,
 				B2D614061BB2D8F6009FF382 /* ofxBulletCone.cpp in Sources */,
 				B2D6140D1BB2D8F6009FF382 /* ofxBulletRope.cpp in Sources */,
-				B2D611721BB2D8EB009FF382 /* depth_packet_stream_parser.cpp in Sources */,
 				B2D614661BB2D8F6009FF382 /* btConvexCast.cpp in Sources */,
 				B2D614261BB2D8F6009FF382 /* btConvex2dConvex2dAlgorithm.cpp in Sources */,
 				B2D6149B1BB2D8F6009FF382 /* btPolarDecomposition.cpp in Sources */,
 				B2D6147A1BB2D8F6009FF382 /* btPoint2PointConstraint.cpp in Sources */,
 				B2D614221BB2D8F6009FF382 /* btCollisionObject.cpp in Sources */,
 				B2D6111F1BB2D8E1009FF382 /* ofxButton.cpp in Sources */,
+				B29971F31BC077EC00141163 /* transfer_pool.cpp in Sources */,
 				B2D614781BB2D8F6009FF382 /* btHinge2Constraint.cpp in Sources */,
 				B2D614711BB2D8F6009FF382 /* btKinematicCharacterController.cpp in Sources */,
 			);
@@ -2730,7 +2730,7 @@
 					"/Users/yuta-toga/Programs/of/of_v0.8.4_osx_release/addons/ofxBullet/libs/bullet2.8.2/lib/osx/x86_64",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxOpenCv/libs/opencv/include/ ../../../addons/ofxKinectV2_aware/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware/libs/protonect/include/ ../../../addons/ofxKinectV2_aware/libs/libusb/include/ ../../../addons/ofxBullet/libs/bullet2.8.2/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinectV2_aware_00/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware_00/libs/protonect/include/ ../../../addons/ofxKinectV2_aware_00/libs/libusb/include/ ../../../addons/ofxBullet/libs/bullet2.8.2/include/ ../../../addons/ofxKinectV2_aware/libs/protonect/include/ ../../../addons/ofxKinectV2_aware/libs/libusb/include/ ../../../addons/ofxOpenCv/libs/opencv/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2821,7 +2821,7 @@
 					"/Users/yuta-toga/Programs/of/of_v0.8.4_osx_release/addons/ofxBullet/libs/bullet2.8.2/lib/osx/x86_64",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxOpenCv/libs/opencv/include/ ../../../addons/ofxKinectV2_aware/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware/libs/protonect/include/ ../../../addons/ofxKinectV2_aware/libs/libusb/include/ ../../../addons/ofxBullet/libs/bullet2.8.2/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxKinectV2_aware_00/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware/libs/libfreenect2/include/ ../../../addons/ofxKinectV2_aware_00/libs/protonect/include/ ../../../addons/ofxKinectV2_aware_00/libs/libusb/include/ ../../../addons/ofxBullet/libs/bullet2.8.2/include/ ../../../addons/ofxKinectV2_aware/libs/protonect/include/ ../../../addons/ofxKinectV2_aware/libs/libusb/include/ ../../../addons/ofxOpenCv/libs/opencv/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -24,7 +24,9 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
+    void setupWhenKinectIsReady();
     bool valueIsInKinectRange(float value);
+    void resetPressed();
     
     ofxPanel panel;
     ofParameter<int> step;
@@ -34,6 +36,8 @@ public:
     ofParameter<bool> enableMouseInput;
     ofParameter<ofVec3f> cameraPosition;
     ofParameter<ofVec3f> cameraLookAt;
+    ofParameter<bool> enableDrawDebugSpheres;
+    ofxButton reset;
     
     ofxKinectV2 kinect;
     ofTexture texDepth;
@@ -50,4 +54,10 @@ public:
     
     // light
     ofLight light;
+    
+    // debug
+    // - debug spheres
+    vector<ofSpherePrimitive> debugSpheres;
+    // - camera target
+    ofSpherePrimitive debugSphereCameraTarget;
 };

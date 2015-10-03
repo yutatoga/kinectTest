@@ -8,24 +8,27 @@ void ofApp::setup(){
     }
     ofBackground(0, 0, 0);
     
+    // listener
+    reset.addListener(this, &ofApp::resetPressed);
+    
     // gui
     panel.setup("distance in mm", "settings.xml", 0, 0);
     panel.add(kinect.minDistance);
     panel.add(kinect.maxDistance);
     panel.add(step.set("step", 5, 3, 30));
-    panel.add(enableDrawDebug.set("enableDrawDebug", false));
+    panel.add(enableDrawDebug.set("enableDrawDebug", true));
     panel.add(enableDrawWireFrame.set("enableDrawWireFrame", true));
     panel.add(enableDrawGuideLine.set("enableDrawGuideLine", false));
     panel.add(enableMouseInput.set("enableMouseInput", true));
-    panel.add(cameraPosition.set("cameraPosition", ofVec3f(0, -4.f, -10.f), ofVec3f(-100, -100, -100), ofVec3f(100, 100, 100)));
-    panel.add(cameraLookAt.set("cameraLookAt", ofVec3f(0, 0, 0), ofVec3f(-100, -100, -100), ofVec3f(100, 100, 100)));
+    panel.add(enableDrawDebugSpheres.set("enableDrawDebugSpheres", false));
+    panel.add(reset.setup("reset"));
     panel.loadFromFile("settings.xml");
     
     // kinect
     kinect.open();
     
     // caemera
-    camera.setDistance(14);
+    camera.setAutoDistance(false);
     camera.setPosition(cameraPosition);
     camera.lookAt(ofVec3f(0, 0, 0), ofVec3f(0, -1, 0));
     if (!enableMouseInput) camera.disableMouseInput();
@@ -42,6 +45,46 @@ void ofApp::setup(){
     // debug
     ofSetVerticalSync(false);
     ofSetFrameRate(0);
+    // - camera target
+    debugSphereCameraTarget.set(10, 3);
+}
+
+void ofApp::setupWhenKinectIsReady(){
+    int w = rawDepthPixels.getWidth();
+    int h = rawDepthPixels.getHeight();
+    int d = (int)kinect.maxDistance.getMax();
+    // gui
+    panel.add(cameraPosition.set("cameraPosition", ofVec3f(w/2.0, h/2.0, 0), ofVec3f(0, 0, -d), ofVec3f(w, h, d)));
+    panel.add(cameraLookAt.set("cameraLookAt", ofVec3f(w/2.0, h/2.0, kinect.minDistance), ofVec3f(0, 0, -d), ofVec3f(w, h, d)));
+    panel.loadFromFile("settings.xml");
+    
+    // camera
+    camera.setPosition(cameraPosition);
+    camera.lookAt(ofVec3f(cameraLookAt), ofVec3f(0, -1, 0));
+    
+    // debug spheres
+    float debugSphereRadius = 5;
+    int debugSphereResolution = 3;
+    float samplingNumber = 100;
+    ofVec3f debugSphereNumber(w/samplingNumber, h/samplingNumber, d/samplingNumber);
+    ofVec3f gapBetweenSpheres(w/debugSphereNumber.x, h/debugSphereNumber.y, d/debugSphereNumber.z);
+    for (int x = 0; x < debugSphereNumber.x; x++) {
+        for (int y = 0; y < debugSphereNumber.y; y++) {
+            for (int z = 0; z < debugSphereNumber.z; z++) {
+                ofSpherePrimitive instantSphere;
+                instantSphere.set(debugSphereRadius, debugSphereResolution);
+                instantSphere.setPosition(x*gapBetweenSpheres.x, y*gapBetweenSpheres.y, z*gapBetweenSpheres.z);
+                debugSpheres.push_back(instantSphere);
+            }
+        }
+    }
+    
+    // - init kinectBulletShape
+    kinectBulletShape = shared_ptr< ofxBulletTriMeshShape >( new ofxBulletTriMeshShape() );
+    kinectBulletShape->create( world.world, kinectMesh, ofVec3f(0,0,0), 0.f, ofVec3f(0, 0, 0), ofVec3f(w, h, kinect.maxDistance.getMax()) );
+    kinectBulletShape->add();
+    kinectBulletShape->enableKinematic();
+    kinectBulletShape->setActivationState( DISABLE_DEACTIVATION );
 }
 
 //--------------------------------------------------------------
@@ -92,22 +135,12 @@ void ofApp::update(){
     
     // bullet
     if (h != 0 && kinectBulletShape == NULL ) {
-        // setup when kinect got ready
-        // - init kinectBulletShape
-        kinectBulletShape = shared_ptr< ofxBulletTriMeshShape >( new ofxBulletTriMeshShape() );
-        kinectBulletShape->create( world.world, kinectMesh, ofVec3f(0,0,0), 0.f, ofVec3f(-10000, -10000, -10000), ofVec3f(10000,10000,10000) );
-        kinectBulletShape->add();
-        kinectBulletShape->enableKinematic();
-        kinectBulletShape->setActivationState( DISABLE_DEACTIVATION );
-        
-        // - camera
-        camera.setPosition(w/2.0, h/2.0, -10.f);
-        camera.lookAt(ofVec3f(w/2.0, h/2.0, 0), ofVec3f(0, -1, 0));
+        setupWhenKinectIsReady();
     }
     
     if (h != 0 && kinectBulletShape != NULL) {
         kinectBulletShape->remove();
-        kinectBulletShape->create( world.world, kinectMesh, ofVec3f(0,0,0), 0.f, ofVec3f(-10000, -10000, -10000), ofVec3f(10000,10000,10000) );
+        kinectBulletShape->create( world.world, kinectMesh, ofVec3f(0,0,0), 0.f, ofVec3f(0, 0, 0), ofVec3f(w, h, kinect.maxDistance.getMax()) );
         kinectBulletShape->add();
         kinectBulletShape->enableKinematic();
         kinectBulletShape->setActivationState( DISABLE_DEACTIVATION );
@@ -115,11 +148,16 @@ void ofApp::update(){
     }
     
     // camera
-    enableMouseInput ? camera.enableMouseInput() : camera.disableMouseInput();
-}
-
-bool ofApp::valueIsInKinectRange(float value){
-    return (value > kinect.minDistance && value < kinect.maxDistance);
+    if (enableMouseInput) {
+        camera.enableMouseInput();
+    }else{
+        camera.disableMouseInput();
+        camera.setPosition(cameraPosition);
+        camera.lookAt(ofVec3f(cameraLookAt), ofVec3f(0, -1, 0));
+    }
+    
+    // camera target
+    debugSphereCameraTarget.setPosition(cameraLookAt);
 }
 
 //--------------------------------------------------------------
@@ -133,20 +171,41 @@ void ofApp::draw(){
             if(enableDrawDebug) world.drawDebug();
             ofEnableLighting();{
                 light.enable();{
+                    // light
+                    light.draw();
+                    
                     // primitive
                     ofDrawBox(0.3, 0, 0, 0.5, 0.5, 0.5);
                     
-                    // - kinect mesh
+                    // kinect mesh
                     kinectMesh.setMode(OF_PRIMITIVE_TRIANGLES);
                     glLineWidth(int(1));
                     ofSetColor(255);
                     enableDrawWireFrame ? kinectMesh.drawWireframe() : kinectMesh.drawFaces();
                     
-                    // - spheres
+                    // spheres
                     ofSetHexColor( 0xC4EF02 );
                     for( int i = 0; i < spheres.size(); i++ ) {
                         spheres[i]->draw();
                     }
+                    ofSetColor(255);
+                    
+                    // debug spheres
+                    if (enableDrawDebugSpheres) {
+                        for (int i = 0; i < (int)debugSpheres.size(); i++) {
+                            if (i == 0) {
+                                ofSetColor(ofColor::red);
+                            }else{
+                                ofSetColor(ofColor::white);
+                            }
+                            debugSpheres[i].draw();
+                        }
+                    }
+                    ofSetColor(255);
+                    
+                    // camera target
+                    ofSetColor(ofColor::yellow);
+                    debugSphereCameraTarget.draw();
                     ofSetColor(255);
                 }light.disable();
             }ofDisableLighting();
@@ -181,6 +240,16 @@ void ofApp::draw(){
     
     // - info
     //    ofDrawBitmapString("ofxKinectV2: Work in progress addon.\nBased on the excellent work by the OpenKinect libfreenect2 team\n\n-Only supports one Kinect v2 at a time. \n-Requires USB 3.0 port ( superspeed )\n-Requires patched libusb. If you have the libusb from ofxKinect ( v1 ) linked to your project it will prevent superspeed on Kinect V2", 10, 14);
+}
+
+bool ofApp::valueIsInKinectRange(float value){
+    return (value > kinect.minDistance && value < kinect.maxDistance);
+}
+
+void ofApp::resetPressed(){
+    panel.loadFromFile("settings.xml");
+    camera.setPosition(cameraPosition);
+    camera.lookAt(ofVec3f(cameraLookAt), ofVec3f(0, -1, 0));
 }
 
 //--------------------------------------------------------------
@@ -222,7 +291,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    
+
 }
 
 //--------------------------------------------------------------
