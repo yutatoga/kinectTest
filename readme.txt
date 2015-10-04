@@ -28,3 +28,5 @@ kinectTest9
 kinectTest10
 >> added ofLight settings with GUI and then now you can control specular light color, diffuse light color, ambient light color and attenuation with sliders.
 
+kinectTest11
+>> added customMaterial and its settings with GUI.
