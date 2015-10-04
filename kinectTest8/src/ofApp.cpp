@@ -174,9 +174,6 @@ void ofApp::draw(){
                     // light
                     light.draw();
                     
-                    // primitive
-                    ofDrawBox(0.3, 0, 0, 0.5, 0.5, 0.5);
-                    
                     // kinect mesh
                     kinectMesh.setMode(OF_PRIMITIVE_TRIANGLES);
                     glLineWidth(int(1));
