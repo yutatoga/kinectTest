@@ -27,6 +27,7 @@ public:
     void setupWhenKinectIsReady();
     bool valueIsInKinectRange(float value);
     void resetPressed();
+    void enableSmoothLightingChanged(bool &enableSmoothLightingStatus);
     
     // gui
     ofxPanel panel;
@@ -43,6 +44,8 @@ public:
     ofParameter<ofFloatColor> lightAmbientColor;
     ofParameter<ofVec3f> lightPosition;
     ofParameter<ofVec3f> lightAttenuation;
+    ofParameter<bool> enableSmoothLighting;
+    ofParameter<bool> enableSeparateSpecularLight;
     ofxButton reset;
     
     // kinect

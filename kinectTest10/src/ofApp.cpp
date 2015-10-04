@@ -10,6 +10,7 @@ void ofApp::setup(){
     
     // listener
     reset.addListener(this, &ofApp::resetPressed);
+    enableSmoothLighting.addListener(this, &ofApp::enableSmoothLightingChanged);
     
     // gui
     panel.setup("distance in mm", "settings.xml", 0, 0);
@@ -26,6 +27,8 @@ void ofApp::setup(){
     panel.add(lightDissuseColor.set("lightDiffuseColor", ofFloatColor::green, ofFloatColor::black, ofFloatColor::white));
     panel.add(lightAmbientColor.set("lightAmbientColor", ofFloatColor::blue, ofFloatColor::black, ofFloatColor::white));
     panel.add(lightAttenuation.set("lightAttenuation", ofVec3f(1.0, 0.0, 0.0), ofVec3f(0.0, 0.0, 0.0), ofVec3f(5.0, 0.01, 0.0001)));
+    panel.add(enableSmoothLighting.set("enableSmoothLighting", true));
+    panel.add(enableSeparateSpecularLight.set("enableSeparateSpecularLight", false));
     panel.loadFromFile("settings.xml");
     
     // kinect
@@ -69,6 +72,7 @@ void ofApp::setup(){
     light.setDiffuseColor(lightDissuseColor);
     light.setAmbientColor(lightAmbientColor);
     light.setAttenuation(lightAttenuation->x, lightAttenuation->y, lightAttenuation->z);
+    ofSetSmoothLighting(enableSmoothLighting);
     
     // debug
     ofSetVerticalSync(false);
@@ -212,6 +216,9 @@ void ofApp::draw(){
             if(enableDrawDebug) world.drawDebug();
             ofEnableLighting();{
                 light.enable();{
+                    if (enableSeparateSpecularLight) {
+                        ofEnableSeparateSpecularLight();
+                    }
                     // light
                     light.draw();
                     
@@ -261,6 +268,9 @@ void ofApp::draw(){
                         }
                     }
                     ofSetColor(255);
+                    if (enableSeparateSpecularLight) {
+                        ofDisableSeparateSpecularLight();
+                    }
                 }light.disable();
             }ofDisableLighting();
             // if(enableDrawDebug) ofDrawAxis(0.5);
@@ -304,6 +314,10 @@ void ofApp::resetPressed(){
     panel.loadFromFile("settings.xml");
     camera.setPosition(cameraPosition);
     camera.lookAt(ofVec3f(cameraLookAt), ofVec3f(0, -1, 0));
+}
+
+void ofApp::enableSmoothLightingChanged(bool &enableSmoothLightingStatus){
+    ofSetSmoothLighting(enableSmoothLighting);
 }
 
 //--------------------------------------------------------------
