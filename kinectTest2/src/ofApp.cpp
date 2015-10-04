@@ -15,6 +15,10 @@ void ofApp::setup(){
     panel.loadFromFile("settings.xml");
     
     kinect.open();
+    
+    // debug
+    ofSetVerticalSync(false);
+    ofSetFrameRate(0);
 }
 
 //--------------------------------------------------------------
