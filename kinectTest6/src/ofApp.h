@@ -1,7 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofMain.h"
 #include "ofxKinectV2.h"
 #include "ofxGui.h"
 #include "ofxXmlSettings.h"
