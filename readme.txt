@@ -24,3 +24,7 @@ kinectTest8
 
 kinectTest9
 >> load assimp model and add it to ofxBulletWorldRigid. you can add ofxBulletCustomShape pressing m key.
+
+kinectTest10
+>> added ofLight settings with GUI and then now you can control specular light color, diffuse light color, ambient light color and attenuation with sliders.
+
